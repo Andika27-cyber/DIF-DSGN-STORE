@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dif - Store</title>
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="styles/responsive.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="favicon/site.webmanifest" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <!-- Top Info -->
+      <div id="header-info">
+        <div class="header-info large-container">
+          <!-- Left Info -->
+          <div
+            class="header-info-items"
+            data-aos="fade-in"
+            data-aos-delay="1200"
+          >
+            <!-- Location -->
+            <div>
+              <svg
+                width="24"
+                height="24"
+                xmlns="http://www.w3.org/2000/svg"
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+              >
+                <path
+                  fill="#fff"
+                  d="M12 0c6.623 0 12 5.377 12 12s-5.377 12-12 12-12-5.377-12-12 5.377-12 12-12zm0 2c5.519 0 10 4.481 10 10s-4.481 10-10 10-10-4.481-10-10 4.481-10 10-10zm1.476 12.955c.988-.405 1.757-1.211 2.116-2.216l2.408-6.739-6.672 2.387c-1.006.36-1.811 1.131-2.216 2.119l-3.065 7.494 7.429-3.045zm-.122-4.286c.551.551.551 1.446 0 1.996-.551.551-1.445.551-1.996 0-.551-.55-.551-1.445 0-1.996.551-.551 1.445-.551 1.996 0z"
+                />
+              </svg>
+              <span>456 Ki Hadjar Dewantara, Nganjuk City, North Nganjuk</span>
+            </div>
+
+            <!-- Email -->
+            <div>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  fill="#fff"
+                  d="M0 3v18h24v-18h-24zm6.623 7.929l-4.623 5.712v-9.458l4.623 3.746zm-4.141-5.929h19.035l-9.517 7.713-9.518-7.713zm5.694 7.188l3.824 3.099 3.83-3.104 5.612 6.817h-18.779l5.513-6.812zm9.208-1.264l4.616-3.741v9.348l-4.616-5.607z"
+                />
+              </svg>
+              <span>pes561186@gmail.com</span>
+            </div>
+          </div>
+
+          <!-- Right Info -->
+          <div
+            class="header-info-items social"
+            data-aos="fade-in"
+            data-aos-delay="1200"
+          >
+            <a href="https://instagram.com">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  fill="#fff"
+                  d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"
+                />
+              </svg>
+            </a>
+
+            <a href="https://youtube.com">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  fill="#fff"
+                  d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"
+                />
+              </svg>
+            </a>
+
+            <a href="https://x.com">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  fill="#fff"
+                  d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- Navigation Menu -->
+      <nav id="nav-desktop">
+        <div class="nav large-container">
+          <ul>
+            <li data-aos="fade-down" data-aos-duration="500">
+              <a href="/">Home</a>
+            </li>
+            <li
+              data-aos="fade-down"
+              data-aos-duration="500"
+              data-aos-delay="100"
+            >
+              <a href="#about">About</a>
+            </li>
+            <li
+              data-aos="fade-down"
+              data-aos-duration="500"
+              data-aos-delay="200"
+            >
+              <a href="#menu">Menu</a>
+            </li>
+          </ul>
+
+          <h1 data-aos="fade-down" data-aos-duration="500" data-aos-delay="300">
+            Dif Store
+          </h1>
+
+          <ul>
+            <li
+              data-aos="fade-down"
+              data-aos-duration="500"
+              data-aos-delay="400"
+            >
+              <a href="#reservation">Order</a>
+            </li>
+            <li
+              data-aos="fade-down"
+              data-aos-duration="500"
+              data-aos-delay="500"
+            >
+              <a href="#location">Location</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <nav id="nav-mobile">
+        <div class="nav-mobile">
+          <div class="nav large-container">
+            <h1
+              data-aos="fade-down"
+              data-aos-duration="500"
+              data-aos-delay="200"
+            >
+              Dif Store
+            </h1>
+
+            <div id="burger-navigation">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+        </div>
+
+        <div class="nav-mobile-main">
+          <div>
+            <a href="/">Home</a>
+          </div>
+          <div>
+            <a href="#about">About</a>
+          </div>
+          <div>
+            <a href="#menu">Menu</a>
+          </div>
+          <div>
+            <a href="#reservation">Order</a>
+          </div>
+          <div>
+            <a href="#location">Location</a>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Hero -->
+      <section id="hero">
+        <div
+          class="hero main-container"
+          data-aos="fade-in"
+          data-aos-duration="1000"
+          data-aos-delay="800"
+        >
+          <h4>enjoy an unforgettable experience</h4>
+          <h1>Dif Store</h1>
+          <div class="hero-cta">
+            <a href="#menu">
+              <button class="cta-button">See Product</button>
+            </a>
+
+            <a href="#reservation">
+              <button class="cta-button">Form Order Design</button>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <div class="header-shadow"></div>
+    </header>
+
+    <!-- About -->
+    <section id="about">
+      <div class="about main-container">
+        <p data-aos="fade-up">
+          Welcome to our website, where every design has a beautiful meaning and
+          every text has a deep meaning. Our excellent service will make you
+          comfortable if you order here, The most important thing is not to be
+          comfortable with the person.
+        </p>
+        <p data-aos="fade-up">
+          Thank you for trusting us to complete your design.
+        </p>
+      </div>
+    </section>
+
+    <!-- Menu -->
+    <section id="menu">
+      <div class="menu main-container">
+        <div class="section-title" data-aos="fade-up">
+          <h5>Explore</h5>
+          <h1>Our Product</h1>
+          <p>
+            Our product, where every design is a masterpiece and every text has
+            meaning, is a huge applause for the product!
+          </p>
+        </div>
+
+        <!-- Main Course -->
+        <div class="sub-menu">
+          <div class="sub-section-title" data-aos="fade-up">
+            <h2>Main course</h2>
+            <p>
+              Enjoy the beauty of our designs, and understand the meaning
+              within!
+            </p>
+            <div class="standing-line"></div>
+          </div>
+
+          <div class="menu-details">
+            <div class="menu-detail" data-aos="fade-up">
+              <div class="menu-item">
+                <div>
+                  <h4>Logo</h4>
+                  <p>For grub logos or community logos.</p>
+                  <div>Rp. 50K</div>
+                </div>
+              </div>
+              <div class="menu-item">
+                <div>
+                  <h4>Kaos Mentah</h4>
+                  <p>Hold t-shirts for printing.</p>
+                  <div>Rp. 100K</div>
+                </div>
+              </div>
+              <div class="menu-item">
+                <div>
+                  <h4>Kaos</h4>
+                  <p>
+                    Full design of print-ready t-shirts with better quality.
+                  </p>
+                  <div>Rp. 150K</div>
+                </div>
+              </div>
+            </div>
+            <div class="menu-detail" data-aos="fade-up">
+              <div class="menu-item">
+                <div>
+                  <h4>Logo Brand</h4>
+                  <p>Logo for those who want to open a brand.</p>
+                  <div>Rp. 80K</div>
+                </div>
+              </div>
+              <div class="menu-item">
+                <div>
+                  <h4>Vector</h4>
+                  <p>
+                    The illustration of the image is quite detailed and
+                    interesting.
+                  </p>
+                  <div>Rp. 180K</div>
+                </div>
+              </div>
+              <div class="menu-item">
+                <div>
+                  <h4>Vector Livery</h4>
+                  <p>For bus or cars with quality that doesn't disappoint.</p>
+                  <div>Rp. 40K</div>
+                </div>
+              </div>
+            </div>
+            <div class="menu-detail" data-aos="fade-up">
+              <div class="menu-item">
+                <div>
+                  <h4>Mentahan Design</h4>
+                  <p>
+                    For those who want to design but don't have the support.
+                  </p>
+                  <div>Rp. 50K - 300k</div>
+                </div>
+              </div>
+              <div class="menu-item">
+                <div>
+                  <h4>File CDR</h4>
+                  <p>
+                    For those who want to learn design, it has been withheld.
+                  </p>
+                  <div>Rp. 200K</div>
+                </div>
+              </div>
+              <div class="menu-item">
+                <div>
+                  <h4>Banner</h4>
+                  <p>event banner or store banner.</p>
+                  <div>Rp. 100k</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Main Course Carousel -->
+    <div
+      class="menu-carousel main-course-carousel"
+      data-aos="fade-up"
+      data-aos-duration="500"
+      data-aos-delay="100"
+    >
+      <div class="menu-carousel-slide main-course-carousel-slide">
+        <span class="menu-img">
+          <img src="images/OIP (1).jpg" alt="DIF DESIGN" />
+          <span class="tooltip-text">DIF DESIGN</span>
+        </span>
+        <span class="menu-img">
+          <img src="images/OIP (2).jpg" alt="DIF DESIGN" />
+          <span class="tooltip-text">DIF DESIGN</span>
+        </span>
+        <span class="menu-img">
+          <img src="images/OIP.jpg" alt="DIF DESIGN" />
+          <span class="tooltip-text">DIF DESIGN</span>
+        </span>
+        <span class="menu-img">
+          <img src="images/1.-DESAIN-KANTOR-MINIMALIS.jpg" alt="DIF DESIGN" />
+          <span class="tooltip-text">DIF DESIGN</span>
+        </span>
+        <span class="menu-img">
+          <img src="images/header-bg.jpg" alt="DIF DESIGN" />
+          <span class="tooltip-text">DIF DESIGN</span>
+        </span>
+        <span class="menu-img">
+          <img src="images/bg1.jpg" alt="DIF DESIGN" />
+          <span class="tooltip-text">DIF DESIGN</span>
+        </span>
+        <span class="menu-img">
+          <img src="images/hero.jpg" alt="DIF DESIGN" />
+          <span class="tooltip-text">DIF DESIGN</span>
+        </span>
+      </div>
+    </div>
+
+    <!-- Reservation -->
+    <section id="reservation">
+      <div class="reservation main-container">
+        <div class="section-title" data-aos="fade-up">
+          <h5>Book tables</h5>
+          <h1>reservation</h1>
+          <p>Contact me a line if you would like to order a design for me.</p>
+        </div>
+
+        <div class="reservation-items">
+          <div class="reservation-item-info" data-aos="fade-up">
+            <div class="reservation-info">
+              <p>We Will confirm your reservation within 24 hours</p>
+            </div>
+
+            <div class="opening-times">
+              <h3>Opening Times</h3>
+
+              <div class="opening-times-schedule">
+                <div>
+                  <p>Monday - Sunday</p>
+                  <p>7am - 10pm</p>
+                </div>
+
+                <div>
+                  <p>Friday</p>
+                  <p>1am - 12pm</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="social-media">
+              <h3>Our Social Media</h3>
+              <div class="contact-info-social">
+                <a href="https://instagram.com">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      fill="#fff"
+                      d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"
+                    />
+                  </svg>
+                </a>
+
+                <a href="https://youtube.com">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      fill="#fff"
+                      d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"
+                    />
+                  </svg>
+                </a>
+
+                <a href="https://x.com">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      fill="#fff"
+                      d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"
+                    />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <form
+            class="reservation-item-form"
+            id="reservation-item-form"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            <div>
+              <label for="table_name">Name</label>
+              <input
+                type="text"
+                name="table_name"
+                id="table_name"
+                placeholder="Your name"
+              />
+            </div>
+            <div>
+              <label for="table_capacity">Number of Orders</label>
+              <input
+                type="number"
+                name="table_capacity"
+                id="table_capacity"
+                placeholder="Number of Orders"
+              />
+            </div>
+            <div>
+              <label for="order_date">Order Date</label>
+              <input
+                type="datetime-local"
+                name="order_date"
+                id="order_date"
+                placeholder="Order Date"
+              />
+            </div>
+            <div>
+              <label for="order">Numbers Of Order</label>
+              <textarea
+                name="order"
+                id="order"
+                placeholder="Design Description(Color, Designation Name)"
+                cols="30"
+                rows="10"
+              ></textarea>
+            </div>
+
+            <div>
+              <button>Send</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Location -->
+    <section id="location">
+      <div class="location">
+        <div class="map" data-aos="fade-up">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126580.50235965197!2d111.79436392347628!3d-7.504858326993096!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7834e8a69fb7b7%3A0x4027a76e3531840!2sKec.%20Rejoso%2C%20Kabupaten%20Nganjuk%2C%20Jawa%20Timur!5e0!3m2!1sid!2sid!4v1746272827279!5m2!1sid!2sid"
+            width="100%"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="footer-info">
+        <div class="footer-info-items main-container">
+          <div data-aos="fade-up">
+            <h3>Welcome To Dif Store</h3>
+            <p>
+              Welcome to the DIF STORE, Where every text has a deep meaning to
+              understand.
+            </p>
+            <p>
+              Step into our cozy paradise, where the aroma of freshly brewed
+              coffee and the warmth of sincere hospitality invite you to relax
+              and enjoy as we design your order.
+            </p>
+          </div>
+
+          <div data-aos="fade-up" data-aos-delay="100">
+            <h3>Visit</h3>
+            <p>456 Ki Hadjar Dewantara, Nganjuk City, North Nganjuk</p>
+
+            <h3>Talk</h3>
+            <p>123.456-7</p>
+
+            <h3>Write</h3>
+            <p>pes561186@gmail.com</p>
+          </div>
+
+          <div data-aos="fade-up" data-aos-delay="200">
+            <h3>Hours</h3>
+            <div>
+              <p>MONDAY TO SUNDAY</p>
+              <p>7am - 10pm</p>
+            </div>
+
+            <div>
+              <p>FRIDAY</p>
+              <p>1am - 12pm</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-copyright">
+        <div class="footer-items large-container">
+          <div class="footer-left">
+            &copy; 2025 DIF STORE. All rights reversed.
+          </div>
+
+          <div class="footer-mid">DIF STORE</div>
+
+          <div class="footer-right">Taste the difference</div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/script.js" type="text/javascript"></script>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
